@@ -23,6 +23,7 @@ public class Solution144 {
         root.left = root.right;
         root.right = tmp;
 
+        // 递归翻转左子树和右子树
         traverse(root.left);
         traverse(root.right);
     }
