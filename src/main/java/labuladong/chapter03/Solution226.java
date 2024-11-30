@@ -6,7 +6,7 @@ import labuladong.model.TreeNode;
  * @author Henray_0607
  * @version 1.0
  * @className Solution226
- * @description 226.翻转二叉树
+ * @description 226.翻转二叉树 T
  * @date 2024/11/20
  */
 public class Solution226 {
@@ -28,16 +28,16 @@ public class Solution226 {
         traverse(root);
         return root;
     }
-    private void traverse(TreeNode node) {
-        if (node == null) {
+
+    private void traverse(TreeNode root) {
+        if (root == null) {
             return;
         }
-        // 前序位置
-        TreeNode tmp = node.left;
-        node.left = node.right;
-        node.right = tmp;
+        TreeNode tmp = root.left;
+        root.left = root.right;
+        root.right = tmp;
 
-        traverse(node.left);
-        traverse(node.right);
+        traverse(root.left);
+        traverse(root.right);
     }
 }
