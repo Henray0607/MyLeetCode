@@ -6,12 +6,12 @@ import labuladong.model.TreeNode;
  * @author Henray_0607
  * @version 1.0
  * @className Solution114
- * @description
+ * @description 114. 二叉树展开为链表 F
  * @date 2024/11/20
  */
 public class Solution114 {
-    TreeNode dummy = new TreeNode(-1);
-    TreeNode p = dummy;
+    TreeNode head = new TreeNode(-1);
+    TreeNode p = head;
 
     public void flatten(TreeNode root) {
         if (root == null) {
